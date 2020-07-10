@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css" rel="stylesheet">
+    <!--
+    .ornek {
+        background-color:rgb(255, 255, 255)
+    }
+
+    .font {
+        font-size: 18px;
+        
+        
+    }
+
+    .Paragraf{
+
+        word-wrap:break-word;
+        width: auto;
+        
+    }
+
+    .wrap {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+            font-size: 16px;
+         }
+
+    .margin{
+
+        margin-left: 10px;
+        
+        
+    }
+
+    .iletisim{
+
+        margin-top: 6px;
+    }
+
+    -->
+</style>
+
+<head>
+</head>
+
+<body   style="height:  100%; background-color: rgb(245, 245, 245);">
+
+    <div class="container my-5">
+        <div class="container" id="TopContainer">   
+            <div class="row">                       <!--BAŞLIK SATIRI -->    
+                <div class="col-md-1"></div>
+                
+                <div class="col-md-10 ornek">
+                 <h4 class="ml-1 mt-2 mb-2" style="font-size: 20px;">PROFİL SAYFASI</h4>
+                 &nbsp;Profini Ziyaret Eden Kişi Sayısı : <b><p id="Visit" style="margin-left: 5px;" class="font"></p></b>
+                 
+                     
+             </div>
+            
+                <div class="col-md-1"></div>
+                
+            </div>
+            <br>
+
+
+
+
+            <div class="row">                           <!--BAŞ KISIM SATIRI -->
+                <div class="col-md-1"></div>
+               
+                <div class="col-md-3 ornek">
+                 <img id="ProfilePicture" width="145" height="135" class="rounded-circle mb-sm-1 mt-3 ml-1">
+                    <input class="align-middle" type="image" id="CameraButton" src="images/camerabutton.png" role="button" width="24px" height="24px"
+                    class="align-top mt-3 ml-2 " data-toggle="modal" data-target="#PictureModal">
+             </div>
+
+                <div class="col-md-6 ornek">
+             </div>
+
+                <div class="col-md-1 ornek">
+                 <input  type="image" id="PencilButton" src="images/PencilButton.png" role="button" width="28px" height="28px"
+                    class="mt-3 ml-2" data-toggle="modal" data-target="#ModalGeneral">
+             </div>
+                <div class="col-md-1">
+            </div></div> 
+                                     
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 ornek">
+                <h4 class="mt-4 ml-1" id="GeneralName"><b>Eren Yılmaz</b></h4>
+                <p class="font mt-4 ml-1" id="GeneralSchool">Gazi Üniversitesi</p>
+                <p class="font mt-4 ml-1" id="GeneralAdress">Ankara, Türkiye</p>
+            </div>
+            <div class="col-md-6 ornek"><br>
+            <h5 style="margin-top: 3px;"><u>İletişim Bilgileri</u></h5>
+            
+            <li class="list-group-item mb-3 " style="width: auto;">
+                <div class="row" style="height: 33px;">
+                    <div class="col-md-4">
+                        <h6 class="ml-3"><u>Telefon</u></h6>
+                    </div>
+                    <div class="col-md-8">
+                        <h6 class="ml-2"><u>E-Mail</u></h6>
+                    </div>
+                </div>
+                <div class="row" style="height: auto;">
+                    <div class="col-md-4 Paragraf" style="font-size: 15px;">
+                        <p id="GeneralNumber" class="ml-3">05455455454</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p id="GeneralMail" class="ml-2 Paragraf" style="font-size: 15px;">erenyilmazgazi@gmail.com</p>
+                    </div>    
+                </div> 
+            </li>                         
+            </div>
+            <div class="col-md-1 ornek"></div>
+            <div class="col-md-1"></div>
+           </div>
+        </div><br>         <!-- TOP CONTAİNER SONU -->   
+            
+
+        <div class="container" id="ContainerAbout">
+            <div class="row ">
+                <div class="col-md-1"></div>  
+                <div class="col-md-9 ornek" id="deneme">
+                    <h5 class="mt-3 ml-2 "><b>Hakkında</b></h5>               
+                    <pre class="wrap" style="font-size: 16px; margin-left: 10px;"  id="AboutText">
+                   </pre>
+                </div>
+                <div class="col-md-1 ornek "">
+                    <input  type="image" id="PencilButtonAbout" src="images/PencilButton.png" role="button" width="28px" height="28px"
+                    class="mt-3 ml-2"  style="margin-top: 35px;" data-toggle="modal" data-target="#ModalAbout">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div><br>
+        
+
+
+        <div class="container" id="ContainerEducation">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-9 ornek" id="EducationDiv">
+                    <h5 class="mt-3 ml-2"><b>Eğitim</b></h5>
+                    <ul class="list-group Paragraf" id="EducationText"><br>
+                    </ul>
+                </div>
+                <div class="col-md-1 ornek">
+                    <input type="image" id="PencilButtonEducation" src="images/PencilButton.png" role="button" width="28px" height="28px"
+                    class="mt-3 ml-2" data-toggle="modal" data-target="#ModalEducation">
+                </div>
+                <div class="col-md-1"></div>
+            </div>  
+        </div><br>                <!-- CONTAINER EĞİTİM SONU -->     
+
+
+        <div class="container" id="ContainerSection">
+            <div class="row">
+            
+                <div class="col-md-1"></div>
+                <div class="col-md-9 ornek" id="SectionDiv">
+                    <h5 class="mt-3 ml-2 mb-3"><b>Yetenekler</b></h5>
+                   
+                   
+                
+                    
+                </div>
+                <div class="col-md-1 ornek">
+                    <input type="image" id="PencilButtonSection" src="images/PencilButton.png" role="button" width="28px" height="28px"
+                    class="mt-3 ml-2" data-toggle="modal" data-target="#ModalSection">
+                </div>
+                <div class="col-md-1"></div>
+                
+            </div>
+        </div>                 <!-- CONTAINERSECTION SONU -->
+
+    </div>   <!-- ANA CONTAINER SONU -->
+
+    
+
+
+    <!-- HAKKINDA MODAL -->
+    <div class="modal fade" id="ModalAbout" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="AboutModelTitle">Hakkında</h5>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 16px;">Hakkınızdaki Bilgileri Güncelleyin.</p>
+        <div class="form-group">
+            <textarea rows="7" class="form-control" id="AboutTextArea"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="SaveAboutButton">Güncelle</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- EĞİTİM MODAL -->
+<div class="modal fade" id="ModalEducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="EducationModalTitle">Eğitim</h5>
+      </div>
+      <div class="modal-body">
+        
+            <form>
+                <div class="form-group">
+                    <span class="ml-1"><label>Okul</label></span>
+                    <input class="form-control" id="SchoolText" placeholder="Okul" type="text" required>
+                    <span class="ml-1"><label class="mt-3">Bölüm</label></span>
+                    <input class="form-control" id="DepartmentText" placeholder="Bölüm" type="text" required>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <span class="ml-1"><label mt-3>Başlangıç Yılı</label></span>
+                                <select id="FirstYear" class="form-control">
+                                    <option value="">Başlangıç Yılı</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <span class="ml-1"><label mt-3>Bitiş Yılı</label></span>
+                                <select id="LastYear" class="form-control">
+                                <option value="">Bitiş Yılı</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option> 
+                                </select>
+                            </div>
+                        </div>
+                    </div>     
+             </form>
+        </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="SaveEducationButton">Güncelle</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- YETENEK MODAL -->
+
+ <div class="modal fade" id="ModalSection" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="SectionModelTitle">Yetenekler</h5>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 16px;">Bir Yetenek Ekleyin.</p>
+        <div class="form-group">
+           <input id="SectionText" class="form-control" placeholder="Yetenek" type="text">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="SaveSectionButton">Ekle</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL GENEL -->
+
+
+<div class="modal fade" id="ModalGeneral" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="SectionModelTitle">Genel Bilgiler</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class=" height:auto; row">
+                <div class="col-md-6">
+                    <span class="ml-1"><label>İsim</label></span>
+                    <input type="text" id="ModalName" placeholder="İsim" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <span class="ml-1"><label>Soy İsim</label></span>
+                    <input type="text" id="ModalLastname" placeholder="Soy İsim" class="form-control">
+                </div>
+            </div>
+            <span class="ml-1"><label class=" mt-3">Okul</label></span>
+            <input type="text" class="form-control" placeholder="Okul" id="ModalSchool">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="ml-1"><label class=" mt-3">Şehir</label></span>
+                    <input type="text" id="ModalCity" placeholder="Şehir" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <span class="ml-1"><label class=" mt-3">Ülke</label></span>
+                    <input type="text" id="ModalCountry" placeholder="Ülke" class="form-control">
+                </div>
+            </div>
+            <span class="ml-1"><label class=" mt-3">Telefon</label></span>
+            <input class="form-control" placeholder="5XX-XXX-XX-XX" maxlength="10"
+             id="ModalNumber"oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+             <span class="ml-1"><label class=" mt-3">Mail</label></span>
+            <input class="form-control" placeholder="E-Mail" id="ModalMail" type="email">
+        </form>   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="SaveGeneralButton">Güncelle</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- RESİM EKLEME MODAL -->
+
+<div class="modal fade" id="PictureModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="SectionModelTitle">Profil Resmi</h5>
+      </div>
+      <div class="modal-body row d-flex justify-content-center" style="margin-top: 40px;">
+        <div class="form-group">
+           <input type="file" id="pictureadres"  text-align: center;" class="border border-dark"> 
+           <br><span><h6 style=" text-align: center; margin-top: 7px;">Profil Resmi Yükleyin</h6></span>     
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="SavePictureButton">Güncelle</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- YETENEK-UPDATE MODAL -->
+
+<div class="modal fade" id="ModalSectionUpdate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="SectionModelTitle">Yetenek Güncelle</h5>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 16px;">Yetenek Bilgilerinizi Güncelleyin.</p>
+        <div class="form-group">
+           <input id="SectionUpdateText" class="form-control" placeholder="Yetenek" type="text">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="SectionUpdateButton">Güncelle</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- EĞİTİM UPDATE MODAL -->
+
+<!-- EĞİTİM MODAL -->
+<div class="modal fade" id="UpdateEducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="EducationModalTitle">Eğitim Bilgilerinizi Güncelleyin.</h5>
+      </div>
+      <div class="modal-body">
+        
+            <form>
+                <div class="form-group">
+                    <span class="ml-1"><label>Okul</label></span>
+                    <input class="form-control" id="UpdateSchoolText" placeholder="Okul" type="text" required>
+                    <span class="ml-1"><label class="mt-3">Bölüm</label></span>
+                    <input class="form-control" id="UpdateDepartmentText" placeholder="Bölüm" type="text" required>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <span class="ml-1"><label mt-3>Başlangıç Yılı</label></span>
+                                <select id="UpdateFirstYear" class="form-control">
+                                    <option value="">Başlangıç Yılı</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <span class="ml-1"><label mt-3>Bitiş Yılı</label></span>
+                                <select id="UpdateLastYear" class="form-control">
+                                <option value="">Bitiş Yılı</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option> 
+                                </select>
+                            </div>
+                        </div>
+                    </div>     
+             </form>
+        </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" class="btn btn-primary" id="UpdateEducationButton">Güncelle</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="jquery.js"></script>
+
+
+                        <!-- SWEETALERT -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+        <script src="sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="sweetalert2.min.css">
+
+
+
+</body>
+
+</html>
